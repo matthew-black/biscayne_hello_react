@@ -3,6 +3,8 @@
 <details>
   <summary>Initial React Notes</summary>
 
+  # Initial React Notes
+
   ## Why Does React Exist?
 
   * Compartmentalize!
@@ -29,61 +31,83 @@
 
 </details>
 
-## Conceptualizing Instagram Through the Lens of Components:
+<details>
+  <summary>Diagram of the App We Made</summary>
 
-### How is Instagram's `<App />` Component Likely Structured?
+  # Diagram of the App We Made
 
-```js
-function App() {
-  return (
-    <div>
-      <SideBar />
-      <StoriesHeader />
-      <PostsScroll />
-    </div>
-  )
-}
-```
+  ### The App We Made:
 
-![App Diagram](./diagrams/App.png)
+  ![The first React app we made](./diagrams/AppAndBears.png)
 
----
+  ### How it Works:
+
+  * [View this in Excalidraw](https://excalidraw.com/#json=Fa05ZHTP8NTBZIq1Da5TC,qURsgXhjNG39PrM-z6ulPA)
+
+  ![Excalidraw image of the app we made](./diagrams/ExcalidrawAppAndBears.png)
+
+</details>
 
 
-### How is Instagram's `<PostsScroll />` Component Likely Structured?
+<details>
+  <summary>Conceptualizing Instagram Through the Lens of Components</summary>
 
-* PostsScroll
+  # Instagram: Conceptualized Through the Lens of Components
 
-```jsx
-function PostsScroll() {
-  return (
-    <>
-      {
-        somePosts.map((aPost) => {
-          return <InstagramPost />
-        })
-      }
-    </>
-  )
-}
-```
+  ### How is Instagram's `<App />` Component Likely Structured?
 
-![PostsScroll Diagram](./diagrams/PostsScroll.png)
+  ```js
+  function App() {
+    return (
+      <div>
+        <SideBar />
+        <StoriesHeader />
+        <PostsScroll />
+      </div>
+    )
+  }
+  ```
 
----
+  ![App Diagram](./diagrams/App.png)
 
-### How is Instagram's `<InstagramPost />` Component Likely Structured?
+  ---
 
-```jsx
-function InstagramPost() {
-  return (
-    <>
-      <PostHeader />
-      <PostImage />
-      <PostFooter />
-    </>
-  )
-}
-```
 
-![InstagramPost Diagram](./diagrams/InstagramPost.png)
+  ### How is Instagram's `<PostsScroll />` Component Likely Structured?
+
+  * PostsScroll
+
+  ```jsx
+  function PostsScroll() {
+    return (
+      <>
+        {
+          somePosts.map((aPost) => {
+            return <InstagramPost />
+          })
+        }
+      </>
+    )
+  }
+  ```
+
+  ![PostsScroll Diagram](./diagrams/PostsScroll.png)
+
+  ---
+
+  ### How is Instagram's `<InstagramPost />` Component Likely Structured?
+
+  ```jsx
+  function InstagramPost() {
+    return (
+      <>
+        <PostHeader />
+        <PostImage />
+        <PostFooter />
+      </>
+    )
+  }
+  ```
+
+  ![InstagramPost Diagram](./diagrams/InstagramPost.png)
+</details>
