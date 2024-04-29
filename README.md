@@ -49,8 +49,7 @@
 </details>
 
 
-<details>
-  <summary>Conceptualizing Instagram Through the Lens of Components</summary>
+
 
   # Instagram: Conceptualized Through the Lens of Components
 
@@ -110,4 +109,4 @@
   ```
 
   ![InstagramPost Diagram](./diagrams/InstagramPost.png)
-</details>
+
